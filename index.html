@@ -1,0 +1,41 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="main.css" rel='stylesheet' type='style/css'/>
+        <link href="main.css" rel="stylesheet" type="text/css" />
+        <script src="quiz.js"></script>
+        <script src="index.js"></script>
+        <title>Rugby-Quiz</title>
+    </head>
+    <body>
+        <main>
+            <h1>Rugby Quiz</h1>
+            <p>How much do you know about rugby? Lets find out!</p>
+            <form role= 'form' action= '/quiz' accept-charset="UTF-8" class= 'quiz'></form>
+            <fieldset>
+                <header>
+                    <p>How long is a Rugby Union match typically?</p>
+                </header>    
+                    <ol type = 'A'>
+                        <li><label for='answerA'>40 minutes</label><option id='answerA' name='answer' value='0'></li>
+                        <li><label for='answerB'>60 minutes</label><option id='answerB' name='answer' value='1'></li>
+                        <li><label for='answerC'>80 minutes</label><option id='answerC' name='answer' value='2'></li>
+                        <li><label for='answerD'>100 minutes</label><option id='answerD' name='answer' value='3'></li>
+                    </ol>
+                    <input type= 'submit'>
+                    <!--Feedback on question-->
+            </fieldset>
+            <h2>Sorry! That was incorrect</h2>
+                <p>The correct answer was C.</p>
+                <button id='nextQuestion'>Next Question</button>
+                <!--End of quiz showing score-->
+                <h2>Congratulations! You did it!</h2>
+                <p>You scored a 9/10</p>
+                <button id='restartQuiz'>Restart Quiz</button>
+        </main>
+        
+    </body>
+    </html>
