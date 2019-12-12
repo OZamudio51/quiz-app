@@ -10,12 +10,20 @@
     </head>
     <body>
         <main>
-            <h1>Rugby Quiz</h1>
-            <p>How much do you know about rugby? Lets find out!</p>
+            <div class= 'start-screen'>
+                <h1>Rugby Quiz</h1>
+                <p>How much do you know about rugby? Lets find out!</p>
+                <button>Start Quiz</button>
+                
+            </div>
             <form role= 'form' action= '/quiz' accept-charset="UTF-8" class= 'quiz'></form>
             <fieldset>
                 <header>
-                    <p>How long is a Rugby Union match typically?</p>
+                    
+                    <h3>How long is a Rugby Union match typically?</h3>
+                    <div class = 'question-number'>
+                    <p>Question 1/10</p>
+                    </div>
                 </header>    
                     <ol type = 'A'>
                         <li><label for='answerA'>40 minutes</label><option id='answerA' name='answer' value='0'></li>
@@ -27,7 +35,10 @@
             </fieldset>
             <fieldset>
                 <header>
-                    <p>How many positions are in Rugby Union?</p>
+                    <h3>How many positions are in Rugby Union?</h3>
+                    <div class = 'question-number'>
+                    <p>Question 2/10</p>
+                    </div>
                 </header>    
                     <ol type = 'A'>
                         <li><label for='answerA'>5</label><option id='answerA' name='answer' value='0'></li>
@@ -39,8 +50,10 @@
             </fieldset>
             <fieldset>
                 <header>
-                    <p>What country does Rugby originate from?</p>
-                </header>    
+                    <h3>What country does Rugby originate from?</h3>
+                    <div class = 'question-number'>
+                    <p>Question 3/10</p>
+                    </div>
                     <ol type = 'A'>
                         <li><label for='answerA'>United States of America</label><option id='answerA' name='answer' value='0'></li>
                         <li><label for='answerB'>United Kingdom</label><option id='answerB' name='answer' value='1'></li>
@@ -51,7 +64,10 @@
             </fieldset>
             <fieldset>
                 <header>
-                    <p>How many timeouts are there per team?</p>
+                    <h3>How many timeouts are there per team?</h3>
+                    <div class = 'question-number'>
+                    <p>Question 4/10</p>
+                    </div>
                 </header>    
                     <ol type = 'A'>
                         <li><label for='answerA'>3</label><option id='answerA' name='answer' value='0'></li>
@@ -63,7 +79,10 @@
             </fieldset>
             <fieldset>
                 <header>
-                    <p>What sport does Rugby come from?</p>
+                </h3>What sport does Rugby come from?</h3>
+                    <div class = 'question-number'>
+                    <p>Question 5/10</p>
+                    </div>
                 </header>    
                     <ol type = 'A'>
                         <li><label for='answerA'>American football</label><option id='answerA' name='answer' value='0'></li>
@@ -74,13 +93,27 @@
                     <input type= 'submit'>
             </fieldset>
             <!--Feedback on question-->
-            <h2>Sorry! That was incorrect</h2>
-                <p>The correct answer was C.</p>
+            <div class = 'correct-answer-screen'>
+                    <h2>That was correct!</h2>
+                    <div class= 'container-box'>
+                        <div>Photo of a player scoring a try</div>
+                    </div>
+                    <button id='nextQuestion'>Next Question</button>
+                </div>
+            <div class = 'incorrect-answer-screen'>
+                <h2>Sorry! That was incorrect</h2>
+                <div class= 'container-box'>
+                    <div>Photo of a player getting tackled</div>
+                </div>
+                   <p>The correct answer was C.</p>
                 <button id='nextQuestion'>Next Question</button>
+            </div>
                 <!--End of quiz showing score-->
+                <div class= 'end-quiz-screen'>
                 <h2>Congratulations! You did it!</h2>
                 <p>You scored a 9/10</p>
                 <button id='restartQuiz'>Restart Quiz</button>
+                </div>
         </main>
         
     </body>

@@ -8,5 +8,51 @@ input, button {
     background-color: white;
 }
 
+.start-screen {
+    text-align: center;
+    border: 1px solid black;
+    padding: 50px;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+}
  
+fieldset {
+    text-align: center;
+}
+
+.question-number {
+    text-align: left;
+}
+
+.container-box {
+    width:250px;
+    height:250px;
+    border:1px solid #000;
+    text-align: center;
+
+}
+
+.correct-answer-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.incorrect-answer-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.end-quiz-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 
