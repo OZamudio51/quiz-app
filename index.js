@@ -143,6 +143,7 @@ function renderQuestion() {
     let question = STORE[currentQuestionNumber];
     showQuestion(question);
     $('#start-screen').hide();
+    $('#header').show();
   });
 
 
